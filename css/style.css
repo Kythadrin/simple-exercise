@@ -8,16 +8,56 @@ a{
 }
 
 .header{
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: -10px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: black;
 }
 
-.mainblock{
+.logo{
+    text-align: left;
+    width: 128px;
+    height: 128px;
+    margin-left: 100px;
+    margin-top: -30px;
+    position: absolute;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .mainBlock{
+    padding-top: 102px;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.mainBlock{
     margin-top: 50px;
     margin-right: 50px;
     margin-left: 50px;
-    height: 700px;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 102px;
+}
+
+.imagePlanet{
+    position: center;
+    width: 256px;
+    height: 256px;
+    margin: 30px;
+}
+
+figure{
+    display: inline-block;
 }
 
 .footer{
@@ -26,10 +66,7 @@ a{
     width: 100%;
     color: white;
     text-align: center;
-}
-
-.buttons{
-    text-align: center;
+    background-color: black;
 }
 
 .headerButton{

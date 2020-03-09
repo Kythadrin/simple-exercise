@@ -6,22 +6,78 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
+    <script src="scripts/stickyHeader.js"></script>
     <title></title>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="Header">
+        <div>
+            <a href="index.html"><img src="media/logo.png" class="logo"></a>
+        </div>
         <div class="buttons">
             <a href="#" class="headerButton">Home</a><a href="#" class="headerButton">Gallery</a><a
-                href="#" class="headerButton">Interesting fakts</a>
+                href="#" class="headerButton">Interesting facts</a>
         </div>
     </div>
-    <div class="mainblock">
-
+    <div class="mainBlock">
+        <figure>
+            <a href=""> <img src="media/sun.jpg" class="imagePlanet"></a>
+            <figcaption>Sun</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/mercury.jpg" class="imagePlanet"></a>
+            <figcaption>Mercury</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/venus.jpg" class="imagePlanet"></a>
+            <figcaption>Venus</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/earth.png" class="imagePlanet"></a>
+            <figcaption>Earth</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/mars.jpg" class="imagePlanet"></a>
+            <figcaption>Mars</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/jupiter.jpg" class="imagePlanet"></a>
+            <figcaption>Jupiter</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/saturn.jpg" class="imagePlanet"></a>
+            <figcaption>Saturn</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/uranus.jpg" class="imagePlanet"></a>
+            <figcaption>Uranus</figcaption>
+        </figure>
+        <figure>
+            <a href=""> <img src="media/neptune.jpg" class="imagePlanet"></a>
+            <figcaption>Neptune</figcaption>
+        </figure>
     </div>
     <div class="footer">
         <p>Created by: Vadim Sirits</p>
         <p>Contact information: <a href="mailto:someone@example.com" class="link">
             vadimsirits@outlook.com</a>.</p>
     </div>
+
+    <!-- Sticky header script --!>
+    <script>
+        window.onscroll = function() {stickyHeader()};
+
+        let header = document.getElementById("Header");
+
+        let sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
