@@ -21,7 +21,7 @@ a{
     text-align: left;
     width: 128px;
     height: 128px;
-    margin-left: 200px;
+    margin-left: 10%;
     margin-top: -30px;
     position: absolute;
 }
@@ -54,6 +54,16 @@ a{
     width: 256px;
     height: 256px;
     margin: 30px;
+}
+
+.imageWiki{
+    float: left;
+}
+
+.wikiContent{
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 figure{
