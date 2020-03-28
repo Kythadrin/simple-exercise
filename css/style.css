@@ -15,6 +15,7 @@ a{
     padding-top: 40px;
     padding-bottom: 60px;
     background-color: black;
+    border-bottom: 2px solid red;
 }
 
 .logo{
@@ -56,6 +57,48 @@ a{
     margin: 30px;
 }
 
+#googleMap{
+    width:50%;
+    height:550px;
+    margin-left: 25%;
+    border: 3px solid red;
+}
+
+.gallery{
+    width: 75%;
+    margin-left: 15%;
+    min-height: 665px;
+    padding: 10px;
+}
+
+.mainBlock iframe{
+    margin: 60px;
+    border: 2px solid red;
+}
+
+.gallery img{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.galleries{
+    margin-top: 10%;
+}
+
+.galleries div{
+    margin-bottom: 20px;
+}
+
+.galleries div:hover{
+    transform: scale(1.1);
+}
+
 .imageWiki{
     float: left;
 }
@@ -77,6 +120,7 @@ figure{
     color: white;
     text-align: center;
     background-color: black;
+    border-top: 2px solid red;
 }
 
 .headerButton{
@@ -98,7 +142,8 @@ figure{
 }
 
 .headerButton:hover{
-    background: #232424 linear-gradient(to bottom, #232424 5%, #878c8b 100%);
+    filter: alpha(100%);
+    transform: scale(1.1);
 }
 
 .headerButton:active{
