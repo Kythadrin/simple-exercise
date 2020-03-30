@@ -76,6 +76,14 @@ a{
     border: 2px solid red;
 }
 
+.mainBlock input{
+    margin-bottom: 20px;
+}
+
+.mainBlock div{
+    margin-top: 20px;
+}
+
 .gallery img{
     transition: 1s;
     padding: 15px;
@@ -101,6 +109,7 @@ a{
 
 .imageWiki{
     float: left;
+    width: 300px;
 }
 
 .wikiContent{
